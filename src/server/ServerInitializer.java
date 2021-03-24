@@ -16,7 +16,7 @@ import io.netty.handler.ssl.SslHandler;
 
 /**
  * @ClassName: ServerInitializer
- * @Description: 装配子通道流水线，在server.ServerEntrance startServer中调用
+ * @Description: 装配子通道流水线，在{@link ServerEntrance#start()}中调用
  * @author Stan
  * @date: 2020年3月24日
  */

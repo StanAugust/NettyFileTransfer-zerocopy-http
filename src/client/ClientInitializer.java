@@ -15,7 +15,7 @@ import io.netty.handler.ssl.SslHandler;
 
 /**
  * @ClassName: ClientInitializer   
- * @Description: 装配流水线，在client.ClientEntrance startClient中被调用
+ * @Description: 装配流水线，在{@link ClientEntrance#start()}中被调用
  * @author Stan
  * @date: 2020年3月24日
  */

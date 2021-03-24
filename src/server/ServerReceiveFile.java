@@ -10,7 +10,7 @@ import io.netty.handler.codec.http.FullHttpRequest;
 
 /**
  * @ClassName: ServerReceiveFile   
- * @Description: 服务器端的处理器，在server.ServerInitializer initChannel中调用 
+ * @Description: 服务器端的处理器，在{@link ServerInitializer#initChannel(io.netty.channel.Channel)}中调用 
  * @author Stan
  * @date: 2020年3月24日
  */
@@ -31,7 +31,6 @@ public class ServerReceiveFile extends ChannelInboundHandlerAdapter{
 	 */
 	@Override
 	public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-		logger.info(msg+"");
 	
 		if(msg instanceof FullHttpRequest) {
 			FullHttpRequest request = (FullHttpRequest)msg;

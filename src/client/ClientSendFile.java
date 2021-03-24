@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import javax.activation.MimetypesFileTypeMap;
@@ -19,7 +18,6 @@ import io.netty.channel.DefaultFileRegion;
 import io.netty.handler.codec.http.DefaultHttpRequest;
 import io.netty.handler.codec.http.HttpChunkedInput;
 import io.netty.handler.codec.http.HttpHeaderNames;
-import io.netty.handler.codec.http.HttpHeaderValues;
 import io.netty.handler.codec.http.HttpMethod;
 import io.netty.handler.codec.http.HttpRequest;
 import io.netty.handler.codec.http.HttpUtil;
@@ -31,7 +29,7 @@ import io.netty.handler.stream.ChunkedWriteHandler;
 
 /**
  * @ClassName: ClientSendFile
- * @Description: 客户端的处理器，在在client.ClientInitializer initChannel中被调用
+ * @Description: 客户端的处理器，在{@link ClientInitializer#initChannel(io.netty.channel.Channel)}中被调用
  * @author Stan
  * @date: 2020年3月24日
  */
